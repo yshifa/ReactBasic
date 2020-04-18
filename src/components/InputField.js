@@ -1,11 +1,15 @@
 import React from "react";
-import { directive } from "@babel/types";
-const InputField = () => {
+import { directive, tsPropertySignature } from "@babel/types";
+//function  getTime() {
+//return new Date().toLocaleDateString();
+//}
+const InputField = props => {
     return (
         <div>
-            <label>Enter your name:</label>
-            <input type="text" />
-            <button style={{color:"red",backgroundColor:"green"}}>submit</button>
+            <label>{props.name}</label>
+            <input type={props.type} />
+            <button style={{color:"red",backgroundColor:"green"}}>{props.buttonText}</button>
+           
         </div>
     );
 };

@@ -2,15 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import InputField from "./components/InputField";
 
+
+
 const App = () => {
     return (
         <div>
-            <InputField />
-            <InputField />
-            <InputField />
-            <InputField />
-            <InputField />
-            <InputField />
+           
+            <InputField
+             name="enter your name"
+            type="text"
+            buttonText={"click here"}
+            />
+            <InputField
+             name="enter your password"
+            type="password"
+            buttonText={"click this"}
+/>
         </div>
     );
 };
